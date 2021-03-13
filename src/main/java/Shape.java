@@ -49,6 +49,7 @@ class Main {
         Shape octagon = new Octagon();
         Shape pentagon = new Pentagon();
         Shape triangle = new Triangle();
+
         System.out.println(circle.nameShape());
         System.out.println(quad.nameShape());
         System.out.println(octagon.nameShape());
