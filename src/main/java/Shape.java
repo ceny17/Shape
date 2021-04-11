@@ -1,44 +1,44 @@
-public abstract class Shape {
-    public abstract String nameShape();
+abstract class Shape {
+    public abstract void nameShape();
 }
 
 class Circle extends Shape {
     private final String circle = "Circle";
     @Override
-    public String nameShape() {
-        return circle;
+    public void nameShape() {
+        System.out.println(circle);
     }
 }
 
 class Quad extends Shape {
     private final String quad = "Quad";
     @Override
-    public String nameShape() {
-        return quad;
+    public void nameShape() {
+        System.out.println(quad);
     }
 }
 
 class Octagon extends Shape {
     private final String octagon = "Octagon";
     @Override
-    public String nameShape() {
-        return octagon;
+    public void nameShape() {
+        System.out.println(octagon);
     }
 }
 
 class Pentagon extends Shape {
     private final String pentagon = "Pentagon";
     @Override
-    public String nameShape() {
-        return pentagon;
+    public void nameShape() {
+        System.out.println(pentagon);
     }
 }
 
 class Triangle extends Shape {
     private final String triangle = "Triangle";
     @Override
-    public String nameShape() {
-        return triangle;
+    public void nameShape() {
+        System.out.println(triangle);
     }
 }
 
@@ -50,10 +50,10 @@ class Main {
         Shape pentagon = new Pentagon();
         Shape triangle = new Triangle();
 
-        System.out.println(circle.nameShape());
-        System.out.println(quad.nameShape());
-        System.out.println(octagon.nameShape());
-        System.out.println(pentagon.nameShape());
-        System.out.println(triangle.nameShape());
+        circle.nameShape();
+        quad.nameShape();
+        octagon.nameShape();
+        pentagon.nameShape();
+        triangle.nameShape();
     }
 }
